@@ -2,9 +2,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     <script>
         function myFunction() {
-            document.getElementById("demo").innerHTML = "Paragraph changed.";
+             text1 = "test";
+             
+             for (i = 0; i < 10; i++){
+                text1 += "nr " + i;
+            }
+
+             if (document.getElementById("demo22").getAttribute("class") =="city")
+              {
+                document.getElementById("demo22").innerHTML = "CITY" +text1;
+                document.getElementById("demo22").className = "city1";
+              }
+              else
+              {
+                document.getElementById("demo22").className = "city";
+                document.getElementById("demo22").innerHTML = "KLIK" + text1;
+
+              }
+
+           
+          
+            
+           
+            
         }
     </script>
     
@@ -12,12 +35,24 @@
 </head>
 <body>
 
-<h1>My First Heading</h1>
+<h1>My First Heading without a class</h1>
 <p>My first paragraph.</p>
-<p id="demo">A Paragraph</p>
+<p id="demo22">A Paragraph</p>
 <button type="button" onclick="myFunction()">Try it</button>
 
 <p>test</p>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city1">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+
+<h1 class="city">My First Heading with class = city</h1>
 
 </body>
 </html> 
