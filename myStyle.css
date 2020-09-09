@@ -18,8 +18,14 @@ h1 {
     padding: 30px;
 } 
 
+/* H1 tags */
+h1 { 
+    background-color: rgb(66, 34, 180);
+    color: white;
+    }   
+
 /* H1 tags which also have a class = "city"*/
-h1.city { 
+    h1.city { 
     background-color: rgb(94, 224, 18);
     color: rgb(47, 16, 160);
     }
