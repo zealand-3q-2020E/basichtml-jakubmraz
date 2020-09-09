@@ -1,23 +1,24 @@
-/* classes with city */
+
+/* H1 tags */
+h1 { 
+    background-color: rgb(66, 34, 180);
+    color: white;
+    }   
+
+/* tags with class = "city" */
 .city {
     background-color: tomato;
     color: white;
     padding: 10px;
 } 
-/* classes with city1 */
+/* tags with class = "city1" */
 .city1 {
     background-color: rgb(255, 71, 111);
     color: rgb(255, 168, 168);
     padding: 30px;
 } 
 
-/* H1 tags */
-h1 { 
-    background-color: rgb(50, 28, 70);
-    color: white;
-    }
-
-    /* H1 tags */
+/* H1 tags which also have a class = "city"*/
 h1.city { 
     background-color: rgb(94, 224, 18);
     color: rgb(47, 16, 160);
