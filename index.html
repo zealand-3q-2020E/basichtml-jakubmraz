@@ -11,23 +11,17 @@
                 text1 += "nr " + i;
             }
 
-             if (document.getElementById("demo22").getAttribute("class") =="city")
+             if (document.getElementById("MyUniqeID").getAttribute("class") =="city")
               {
-                document.getElementById("demo22").innerHTML = "CITY" +text1;
-                document.getElementById("demo22").className = "city1";
+                document.getElementById("MyUniqeID").innerHTML = "CITY" +text1;
+                document.getElementById("MyUniqeID").className = "city1";
               }
               else
               {
-                document.getElementById("demo22").className = "city";
-                document.getElementById("demo22").innerHTML = "KLIK" + text1;
+                document.getElementById("MyUniqeID").className = "city";
+                document.getElementById("MyUniqeID").innerHTML = "KLIK" + text1;
 
-              }
-
-           
-          
-            
-           
-            
+              }            
         }
     </script>
     
@@ -37,7 +31,7 @@
 
 <h1>My First Heading without a class</h1>
 <p>My first paragraph.</p>
-<p id="demo22">A Paragraph</p>
+<p id="MyUniqeID">A Paragraph</p>
 <button type="button" onclick="myFunction()">Try it</button>
 
 <p>test</p>
