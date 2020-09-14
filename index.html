@@ -3,7 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script>
+    <!--<script>
         function myFunction() {
             
              if (document.getElementById("2").getAttribute("class") =="city")
@@ -15,25 +15,65 @@
                 document.getElementById("2").className = "city";
               }            
         }
+    </script>-->
+    <script>
+        function calculateDate() {
+            if (document.getElementById("cigarettes").value > 10)
+            {
+                document.getElementById("result").innerHTML = "He would &#128563; &#128561; &#128561;";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML = "He wouldn't %#128514; &#128514; &#58401;";
+            }
+        }
     </script>
     
-<title>Page Title</title>
+    <title>Shadow the Hedgehog</title>
 </head>
+
 <body>
-  <h1>Capitals</h1>
+    <h1>This page is about Shadow the Hedgehog</h1>
+    <h2>Top 10 Reasons Why Shadow the Hedgehog is the Coolest Character</h2>
 
-  <h2 id="1" class="city">London</h2>
-  <p>London is the capital of England.</p>
-  
-  <h2 id="2" class="city1">Paris</h2>
-  <p>Paris is the capital of France.</p>
-  
-  <h2 id="3">Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  
-  <h1 class="city">--Capitals--</h1>
+    <ol>
+        <li>He is very cool<img src="Resources/cool.png"></li>
+        <li>He has gun<img src="Resources/gun.png" /></li>
+        <li>He smokes<img src="Resources/cigarett.png" /></li>
+        <li>He has woman <img src="Resources/woman.png" /></li>
+        <li>Better than Sonic <img src="Resources/cooler.png" /></li>
+        <li>He does not give a fr*ick <img src="Resources/no frick.png" /></li>
+        <li>He is speed <img src="Resources/fast.png" /></li>
+        <li>Hair is red <img src="Resources/hair.png" /></li>
+        <li>He will kill dad next time he drinks the angry juice <img src="Resources/kill dad.png" /></li>
+        <li>He kinda hot &#128563; &#128563; <img src="Resources/blush.jpg" /></li>
+    </ol>
 
-  <button type="button" onclick="myFunction()">Change colour</button>
+    <h2>Wikipedia link for Shadow the Hedgehog</h2>
+    <a href="https://en.wikipedia.org/wiki/Shadow_the_Hedgehog">This is the link to his wikipedia page.</a>
+
+    <h2>Would Shadow date you? &#128563;</h2>
+    <form>
+        <label>How many cigarettes do you smoke a day?:</label><br />
+        <input type="number" id="cigarettes" name="cigarettes" value="0" /><br /><br />
+        <input type="submit" onclick="calculateDate()" value="Check." /><br /><br />
+    </form>
+<p id="result">The result will show here</p>
+
+<!--This doesn't work--> 
+
+<!--<h2 id="1" class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 id="2" class="city1">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 id="3">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <h1 class="city">--Capitals--</h1>
+
+    <button type="button" onclick="myFunction()">Change colour</button>-->
 
 </body>
 </html> 
