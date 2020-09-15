@@ -20,11 +20,11 @@
         function calculateDate() {
             if (document.getElementById("cigarettes").value > 10)
             {
-                document.getElementById("result").innerHTML = "He would &#128563; &#128561; &#128561;";
+                document.getElementById("result").innerHTML = "<strong>He would &#128563; &#128561; &#128561;</strong>";
             }
             else
             {
-                document.getElementById("result").innerHTML = "He wouldn't &#128514; &#128514; &#128078;";
+                document.getElementById("result").innerHTML = "<strong>He wouldn't &#128514; &#128514; &#128078;</strong>";
             }
         }
     </script>
@@ -58,7 +58,7 @@
         <input type="number" id="cigarettes" name="cigarettes" value="0" /><br /><br />
         <input type="button" onclick="calculateDate()" value="Check." /><br /><br />
     </form>
-<p id="result">The result will show here</p>
+<p id="result"><strong>The result will show here</strong></p>
 
 <!--This doesn't work--> 
 
